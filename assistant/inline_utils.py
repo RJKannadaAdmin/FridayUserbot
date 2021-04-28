@@ -479,7 +479,7 @@ async def wow_nice(client, cb):
         v_t = CMD_LIST
         bttn = paginate_help(0, CMD_LIST, "helpme", is_official=nice)
     await cb.edit_message_text(
-        f"Command List & Help \n**Total Commands :** `{len(v_t)}` \n**@The_HaCkeR_XD**",
+        f"Command List & Help \n**Total Commands :** `{len(v_t)}` \n**@TheHacker90**",
         reply_markup=InlineKeyboardMarkup(bttn),
     )
 
@@ -512,7 +512,7 @@ async def give_plugin_cmds(client, cb):
         is_official = False
     cmd_list = CMD_LIST if is_official else XTRA_CMD_LIST
     help_string = f"**💡 PLUGIN NAME 💡 :** `{plugin_name}` \n{cmd_list[plugin_name]}"
-    help_string += "\n\n**@The_HaCkeR_XD** ".format(plugin_name)
+    help_string += "\n\n**@TheHacker90** ".format(plugin_name)
     await cb.edit_message_text(
         help_string,
         reply_markup=InlineKeyboardMarkup(
